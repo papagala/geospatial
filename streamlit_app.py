@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title("Uber pickups in NYC")
+st.title("Mapa interactivo e histograma de crímenes en la ciudad de Nueva York")
+st.subheader("Actividad 4.2 Aplicación Móvil")
 
 
 # Utilizamos cache para solo tener que cargar los datos una sola vez
