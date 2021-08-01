@@ -41,3 +41,13 @@ mask = subset_clean["ofns_desc"] == options
 
 # Generamos un mapa con la ubicación geográfica del lugar del crímen
 st.map(subset_clean[mask])
+
+st.subheader("Referencias")
+
+st.text(
+    "Create a data explorer app — Streamlit 0.76.0 documentation. (2021). Retrieved 1 August 2021, from https://docs.streamlit.io/en/0.76.0/tutorial/create_a_data_explorer_app.html"
+)
+
+st.text(
+    "New York City Crimes. (2021). Retrieved 1 August 2021, from https://www.kaggle.com/adamschroeder/crimes-new-york-city/version/1?select=Crime_Column_Description.csv"
+)
