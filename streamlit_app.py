@@ -22,11 +22,6 @@ def load_data(
 data_load_state = st.text("Cargando datos...")
 data = load_data("NYPD_Complaint_Data_Historic.zip", "cmplnt_fr_dt")
 
-# Habilitamos un botón para desplegar el DataFrame para inspeccionar los datos
-if st.checkbox("Show raw data"):
-    st.subheader("Raw data")
-    st.write(data)
-
 # Mostramos el número de crímenes por mes
 st.subheader("Número de crímenes por mes")
 hist_values = np.histogram(data["cmplnt_fr_dt"].dt.month, bins=12, range=(0, 13))[0]
